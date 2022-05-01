@@ -152,7 +152,7 @@ svg text {font-size: 4px !important;}
 
 
 
-<br id="contrib-hook">
+<br id="contributing">
 <div class="card" id="contrib" align="center">
 	Contribute ECH to Bootstrap our future Validator!
 	<br><br>
@@ -353,7 +353,7 @@ window.addEventListener('load',async function()
 async function contrib()
 {
 	$("contrib").style.display = "revert";
-	window.location="#contrib-hook"
+	window.location="#contributing"
 	cw()
 }
 
@@ -423,7 +423,23 @@ async function basetrip()
 		signer = provider.getSigner();
 		if(!(window.ethereum.selectedAddress==null)){console.log("Found old wallet:", window.ethereum.selectedAddress);cw();}
 	}
-	else //if(Number(window.ethereum.chainId)==CHAINID)
+	else if(isFinite(Number(window.ethereum.chainId)))
+	{
+		window.ethereum.request({
+    	method: "wallet_addEthereumChain",
+    	params: [{
+        	chainId: "0xbb8",
+        	rpcUrls: ["https://rpc.ech.network","https://evm.ech.network"],
+        	chainName: "Echelon",
+        	nativeCurrency: {
+            	name: "ECH",
+            	symbol: "ECH",
+            	decimals: 18
+        	},
+        	blockExplorerUrls: ["https://scout.ech.network","https://explorer.ech.network","https://scan.ech.guru"]
+    		}]
+		});
+	}
 	{
 		console.log("Couldn't find Ethereum Provider - ",CHAINID,window.ethereum.chainId)
 		if((typeof Number(window.ethereum.chainId) == "number")){$("cw_m").innerHTML = "Wrong network! Switch from " + Number(window.ethereum.chainId)+" to "+CHAINID}
