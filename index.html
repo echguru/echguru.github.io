@@ -259,10 +259,13 @@ async function globalmetrics() {
 	.then(d=>{
 		$("tvls").innerHTML = `
 			<img src="https://ftm.guru/icons/echelon.png">$${d.currentChainTvls.Echelon.toLocaleString()}
+		`
+		/*
 			<img src="https://ftm.guru/icons/ftm.svg">$${d.currentChainTvls.Fantom.toLocaleString()}
 			<img src="https://ftm.guru/icons/kcs.svg">$${d.currentChainTvls.Kucoin.toLocaleString()}
-			<img src="https://ftm.guru/icons/mtv.svg">$${d.currentChainTvls.MultiVAC.toLocaleString()}
+			<img src="https://ftm.guru/icons/mtv.png">$${d.currentChainTvls.MultiVAC.toLocaleString()}
 		`
+		*/
 	})
 }
 
