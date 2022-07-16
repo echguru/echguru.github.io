@@ -41,6 +41,11 @@ td a{text-decoration-line: none}
 .cards{text-align:center;display:grid;grid-template-columns:	 auto;}
 .card{padding:15px;box-shadow: rgba(0,255,255,0.2) 0px 0px 10px 10px;background: linear-gradient(45deg, rgba(0,255,0,0.25), rgba(0,0,255,0.25));padding:15px;
 margin:5%;border-radius: 15px;border:aqua 2px solid}
+
+.card:hover{transform: translateY(-8px);}
+.future.cards .card {filter:  grayscale(80%)}
+.future.cards .card:hover {filter:  grayscale(20%)}
+
 input,button{border-radius:25px;background:black;text-align:center;font-size:1.25em}
 button:hover{  box-shadow: 0 0px 10px 5px rgba(255,255,255,.2), 0px 0px 10px 5px rgba(255,255,255,0.1);transition: 0.2s}
 .card button {background: linear-gradient(45deg, rgba(0,0,255,0.5), rgba(0,255,0,0.5));padding:4px 0 6px;width:140px;margin:10px 0  }
@@ -87,7 +92,7 @@ svg text {font-size: 4px !important;}
 @font-face{ font-family:regular_italic;src: url(https://ftm.guru/font/regular_italic.ttf);}
 *{font-family:regular;}
 
-
+.future .card {filter:greyscale(100%)}
 @media(min-width:641px){
   .hhr{width: 555px}
 	.lowerbar2{display: grid;grid-template-columns: auto auto auto auto;text-align:center}
@@ -102,18 +107,18 @@ svg text {font-size: 4px !important;}
 	svg text {font-size: 3px !important;}
 	svg polyline#pl_t_f {stroke-width: 0.25;}
 }
+.footer *{text-align:left}
+#tvls img{height:18px;position:relative;top:3px;margin-left:5px}
+
 </style>
 
 <div class="topbar">
 	<div align="center">
 		<a href="https://ECH.guru"><img src="https://ftm.guru/icons/echguru.png" style="position: relative;top: 6px;border-radius: 6px;" width="36px"><b style="font-size:2em">ECH.guru</b></a><br><br>
-		<a href="https://ECH.guru/GRAIN">Kompound</a>
-		<a href="https://charts.ECH.guru">DEX Charts</a>
-		<a href="https://scan.ECH.guru">ECHScan</a>
 	</div>
 </div>
-<br>
 <hr class="hhr">
+<br><span style="font-family:light_italic">Simplicity is the ultimate sophistication.</span>
 <br>
 <br>
 <br>
@@ -132,6 +137,11 @@ svg text {font-size: 4px !important;}
 	<a href="https://ech.guru/dexch"><button>Buy ECH</button></a>
 	</div>
 	<div class="card">
+	<h3>4ECHUSD</h3>
+	Sophisticated Financial Instrument with majority exposure to $bECH.<br>
+	<a href="https://charts.ech.guru"><button>Invest</button></a>
+	</div>
+	<div class="card">
 	<h3>Charts</h3>
 	Simple DEX Charts supporting all pairs from all DEX.<br>
 	<a href="https://charts.ech.guru"><button>View Graph</button></a>
@@ -147,7 +157,7 @@ svg text {font-size: 4px !important;}
 <br>
 <br>
 <h2 align="center">Future Offerings</h2>
-<div class="cards">
+<div class="future cards">
 	<div class="card">
 	<h3>Validator</h3>
 	Full Validator Node for Echelon with Liquid-Staking.<br>
@@ -184,168 +194,49 @@ svg text {font-size: 4px !important;}
 <br>
 
 <div align="center" class="advert">
-<!--
-<pre>Get $ELITE Tokens
-0xf43Cc235E686d7BC513F53Fbffb61F760c3a1882</pre>
-<div id="c2a">
-	<div class="">
+	<h1 align="center">( 🦾 , 🚀 )</h1>
+	<div class="lowerbar">Powered by Guru Network.
+	<br>
+		<a target="_blank" href="https://kcc.guru">KCC.guru</a>
+		<a target="_blank" href="https://ftm.guru">FTM.guru</a>
+		<a target="_blank" href="https://fmc.guru">FMC.guru</a>
+		<a target="_blank" href="https://fmc.guru">MTV.guru</a>
+		<a target="_blank" href="https://fmc.guru">ECH.guru</a>
+		<br><br>
 	</div>
-	<div class="c2a" id="a2m">
-		🦊 Add ELITE to MetaMask
+		As seen on
+	<div class="lowerbar">
+		<a target="_blank" href="https://messari.io/asset/ftm-guru"><img src="https://ftm.guru/icons/messari.svg"></a>
+		<a target="_blank" href="https://fmc.guru"><img src="https://ftm.guru/icons/FMC.svg"></a>
+		<a target="_blank" href="https://www.coingecko.com/coins/elite-1337"><img src="https://ftm.guru/icons/gecko.svg"></a>
+		<a target="_blank" href="https://coinmarketcap.com/currencies/elite-1337"><img src="https://ftm.guru/icons/cmc.svg"></a>
+		<a target="_blank" href="https://defillama.com/protocol/guru-network"><img src="https://ftm.guru/crypto-icons/defillama.svg"></a>
+		<a target="_blank" href="https://debank.com/profile/guru"><img src="https://ftm.guru/icons/debank.svg"></a>
+		<a target="_blank" href="https://nomics.com/assets/elite2-ftmguru"><img src="https://ftm.guru/icons/nomics.svg"></a>
+		<br><br>
 	</div>
-	<div class="c2a" id="ibe" onclick="c1()">
-		Insta-Buy 15 FTM of ELITE
-	</div>
-	<div class="">
-	</div>
-</div>
-<br>
-<a href="https://ftmscan.com/token/0xf43cc235e686d7bc513f53fbffb61f760c3a1882" target="_blank"><button>ftmScan</button></a>
-<a href="https://app.sushi.com/swap?outputCurrency=0xf43cc235e686d7bc513f53fbffb61f760c3a1882" target="_blank"><button>Sushi</button></a>
-<a href="https://spookyswap.finance/swap?outputCurrency=0xf43cc235e686d7bc513f53fbffb61f760c3a1882" target="_blank"><button>Spooky</button></a>
-<a href="https://swap.spiritswap.finance/#/add/FTM/0xf43cc235e686d7bc513f53fbffb61f760c3a1882" target="_blank"><button>Spirit</button></a>
-<a href="https://dex.zoocoin.cash/orders/market?inputCurrency=0xf43Cc235E686d7BC513F53Fbffb61F760c3a1882&outputCurrency=FTM" target="_blank"><button>ZDEX</button></a>
--->
-<h3>Our ECH Treasury Address:</h3>
-0x167d87a906da361a10061fe42bbe89451c2ee584<br>
-<i>Revenue will be used to booststrap our <b>Validator</b> for the Echelon Network</i>
-<h2 align="center">(🦾,🚀)</h2>
-<br><br>
-<div class="lowerbar">Powered by Guru Network.
-<br>
-	<a target="_blank" href="https://kcc.guru">KCC.guru</a>
-	<a target="_blank" href="https://ftm.guru">FTM.guru</a>
-	<a target="_blank" href="https://fmc.guru">FMC.guru</a>
-	<a target="_blank" href="https://fmc.guru">MTV.guru</a>
-	<a target="_blank" href="https://fmc.guru">ECH.guru</a>
-	<br><br>
-	<a target="_blank" href="https://messari.io/asset/ftm-guru"><img src="https://ftm.guru/icons/messari.svg"></a>
-	<a target="_blank" href="https://fmc.guru"><img src="https://ftm.guru/icons/FMC.svg"></a>
-	<a target="_blank" href="https://www.coingecko.com/coins/elite-1337"><img src="https://ftm.guru/icons/gecko.svg"></a>
-	<a target="_blank" href="https://coinmarketcap.com/currencies/elite-1337"><img src="https://ftm.guru/icons/cmc.svg"></a>
-	<a target="_blank" href="https://defillama.com/protocol/ftmguru"><img src="https://ftm.guru/crypto-icons/defillama.svg"><img class="subimg" src="https://ftm.guru/crypto-icons/64.png"></a>
-	<a target="_blank" href="https://defillama.com/protocol/kccguru"><img src="https://ftm.guru/crypto-icons/defillama.svg"><img class="subimg" src="https://ftm.guru/crypto-icons/kucino.svg"></a>
-	<a target="_blank" href="https://nomics.com/assets/elite2-ftmguru"><img src="https://ftm.guru/icons/nomics.svg"></a>
-	<br><br>
-	<a target="_blank" href="https://medium.com/@ftm1337"><img src="https://ftm.guru/icons/medium.svg"></a>
-	<a target="_blank" href="https://twitter.com/ftm1337"><img src="https://ftm.guru/crypto-icons/twitter.svg"></a>
-	<a target="_blank" href="https://t.me/ftm1337"><img src="https://ftm.guru/crypto-icons/telegram.svg"></a>
-	<a target="_blank" href="https://discord.com/invite/QpyfMarNrV"><img src="https://ftm.guru/crypto-icons/discord.svg"></a>
-</div>
-<a href="https://t.me/Sam4x" target="_blank">Contact us to Advertise Here.</a>
-</div>
-<hr><br><br>
-<h5 align="center" id="disclaimer"><b><u>Disclaimer & Notice</u></b><br>
-<h4>Our Charts are not Financial Advice!</h4>
-<h4>Guru Network doesnt endorse anyone!</h4>
-All information presented here is only for aesthetic uses and posesses no validity to settle any claims. It is also non-exhaustive and prone to error. Advertisements are not endorsements. This dashboard is ultra-real time - It means that the data on this page has zero latency, unlike CMC or CG which have 1-10 minutes old data. FTM.guru and FMC.guru are trying to keep up with our <b>Fast First</b> motto. <i>A much deserved shoutout to all open-source and web3 developers for their benign Services!</i> A "-" or a "0" represents unavailability or anomalities in data and it is masked to suppress pollution.<br>We encourage you to report inconsistencies, ask business queries, request new Token, Protocol or DEX listings or start an ad campaign at one of our community channels:<br>
-<b><a href="https://t.me/FTM1337" target="_blank">Telegram</a> or <a href="https://discord.gg/QpyfMarNrV" target="_blank">Discord.</a></b><!--
-Our Address: 0x921Ed37f62CBe4d86D38b720EF4a4a44B24a1C5D--></h5>
-<br>
-<br>
-<div align="center" id="spadd" style="">
-<font id="spadf" size="2" style="text-align:center">(Sponsored Ad)</font>
-<br>
-<i><a href="https://t.me/FTM1337">Please Telegram us for queries.</a></i>
-<br>
-<a id="spada" href="" target="_blank">
-<img id="spadi" src="" width="80%"></img><br>
-</a>
-</div>
-
-<br><br>
-<hr class="hhr">
-<br><br>
-<div class="lowerbar2" align="center">
-	<div align="left" class="lowercat">
-		<span>Ecosystem</span><br>
-		<a href="https://mtv.guru" target="_blank">MTV.Guru</a><br>
-		<a href="https://fmc.guru" target="_blank">FantomMarketCap</a><br>
-		<a href="https://ftm.guru" target="_blank">FTM1337</a><br>
-		<a href="https://kcc.guru" target="_blank">Kucino Casino</a><br>
-	</div>
-	<div align="left" class="lowercat">
-		<span>Farming</span><br>
-		<a href="https://mtv.guru/GRAIN.html">🌾 Kompound</a><br>
-		<a href="https://ftm.guru/yieldstate.html">🔱 YieldState</a><br>
-		<a href="https://ftm.guru/LF">👽 LITE Farmlands</a><br>
-		<a href="https://vfat.tools/fantom/guru">🧑‍🌾 vfat.tools</a>
-	</div>
-	<div class="lowercat">
-		<span><a href="https://kcc.guru/casino.html">Casino & Games</a></span><br>
-		<a href="https://kcc.guru/jackpot_1.html">2-player Jackpot</a><br>
-		<a href="https://kcc.guru/instalotto.html">instaLOTTO</a><br>
-		<a href="https://kcc.guru/21hrlotto.html">🎟 21-hour LOTTO</a>
-	</div>
-	<div class="lowercat">
-		<span><a href="https://kcc.guru/dashboard.html">Dashboard</a></span><br>
-		<a href="https://kcc.guru/claimkcs.html">Claim KCS Earnings</a><br>
-		<a href="https://kcc.guru/markets.html">Market Statistics</a><br>
-		<a href="https://kcc.guru/balancesheet.html">Balance Sheet</a><br>
-	</div>
-	<div align="left" class="lowercat">
-		<span>Our Dapps</span><br>
-		<a href="https://ftm.guru/degam.html">✨ FTM CASINO</a><br>
-		<a href="https://ftm.guru/degam.html">🎰 KCS Kucino</a><br>
-		<a href="https://ftm.guru/approver.html">✅ Approver</a><br>
-		<a href="https://ftm.guru/airdrop.html">Airdrop-Tool</a><br>
-	</div>
-	<div align="left" class="lowercat">
-		<span>Chain Tools</span><br>
-		<a href="https://ftm.guru/pair.html">DEX-Explorer</a><br>
-		<a href="https://ftm.guru/fantomscan.html">🔍 FantomScan</a><br>
-		<a href="https://kcc.guru/kscan" target="_blank">🔎 kscan</a><br>
-		<a href="https://ftm.guru/apelist.html">Ape-List</a><br>
-	</div>
-	<div align="left" class="lowercat">
-		<span>Opera Utilities</span><br>
-		<a href="https://ftm.guru/elite.html">ELITE Analytics</a><br>
-		<a href="https://t.me/FTM1337/12497" target="_blank">🤖 GambleBot Telegram</a><br>
-		<a href="https://ftm.guru/index.html">🗳 Elite-Gems Voting</a>
-	</div>
-	<div class="lowercat">
-		<span>$KUCINO</span><br>
-		<a target="_blank" href="https://swap.kudex.finance/#/swap?outputCurrency=0x4c9fa6297d3413fbbe7ba935e14022d0e5a39dc7">Trade at Kudex</a><br>
-		<a target="_blank" href="https://explorer.kcc.io/token/0x4c9fa6297d3413fbbe7ba935e14022d0e5a39dc7">KCC Explorer</a><br>
-		<a target="_blank" href="https://t.me/kccguru">Chart at Poocoin</a><br>
-		<a target="_blank" href="https://testnet.bscscan.com/address/0x4c9fa6297d3413fbbe7ba935e14022d0e5a39dc7#code">View Source</a>
-	</div>
-	<div class="lowercat">
-		<span>Resources</span><br>
-		<a target="_blank" href="https://kcc.guru/roadmap">Kucino Roadmap</a><br>
-		<a target="_blank" href="https://kcc.guru/roadmap">KUCINO Tokenimcs</a><br>
-		<a target="_blank" href="https://ftmscan.com/address/0x74bfb7e94bef5767f5f6ace2d0df73a224adb689">385 ELITE ETL</a><br>
-		<a target="_blank" href="https://kudex.finance/locker">KCS Liquidity Lock</a><br>
-		<a target="_blank" href="https://kudex.finance/locker">70% KUCINO ETL</a><br>
-		<a target="_blank" href="docs">📚 Documentation</a><br>
-	</div>
-	<div class="lowercat">
-		<span>Telegrams</span><br>
-		<a target="_blank" href="https://t.me/ftm1337">FantomOpera#1337</a><br>
-		<a target="_blank" href="https://t.me/ftmguru">Announcements</a><br>
-		<a target="_blank" href="https://t.me/kucino">Kucino Group</a><br>
-		<a target="_blank" href="https://t.me/kccguru">KCC.guru Channel</a><br>
-		<a target="_blank" href="https://t.me/kccguru">FMC New Listings</a><br>
-	</div>
-	<div class="lowercat">
-		<span>Social & Media</span><br>
-		<a target="_blank" href="https://medium.com/@ftm1337">Medium Journal</a><br>
-		<a target="_blank" href="https://discord.gg/QpyfMarNrV">Discord Server</a><br>
-		<a target="_blank" href="https://twitter.com/kccGuru">Kucino Twitter</a><br>
-		<a target="_blank" href="mailto:ftm1337@protonmail.com">Official Mail</a><br>
-	</div>
-	<div class="lowercat">
-		<a href="https://ftm.guru/index.html"><b style="font-size:2em"><code>FTM.guru</code></b></a><br>
-		<a href="https://fmc.guru/index.html"><b style="font-size:2em"><code>FMC.guru</code></b></a><br>
-		<a href="https://kcc.guru/index.html"><b style="font-size:2em"><code>KCC.guru</code></b></a><br>
-		<a href="https://mtv.guru/index.html"><b style="font-size:2em"><code>MTV.guru</code></b></a><br>
-		<a href="https://ech.guru/index.html"><b style="font-size:2em"><code>ECH.guru</code></b></a><br>
-	</div>
-	<div class="lowercat">
+	Become one of us
+	<div class="lowerbar">
+		<a target="_blank" href="https://medium.com/@ftm1337"><img src="https://ftm.guru/icons/medium.svg"></a>
+		<a target="_blank" href="https://twitter.com/ftm1337"><img src="https://ftm.guru/crypto-icons/twitter.svg"></a>
+		<a target="_blank" href="https://t.me/ftm1337"><img src="https://ftm.guru/crypto-icons/telegram.svg"></a>
+		<a target="_blank" href="https://discord.com/invite/QpyfMarNrV"><img src="https://ftm.guru/crypto-icons/discord.svg"></a>
 	</div>
 </div>
-localogs:<br>
-<span id="cw_m"></span>
+<hr>
+<div class="footer">
+	<details>
+		<summary>
+		TVL: <span id="tvls">$1.000</span>
+		<!--
+		Bank: <span id="banks">$1.000</span>
+		Outstanding: <span id="outstandings">$1.000</span>
+		-->
+	</summary>
+	localogs:<br>
+	<span id="cw_m"></span>
+	</details>
+</div>
 <script src="https://ftm.guru/ethers-5.2.umd.min.js">
 </script>
 <script>
@@ -356,10 +247,25 @@ window.addEventListener('load',async function()
 
 	console.log("waitin for 3 secs..");
 	$("cw_m").innerHTML = "Connecting.. Please wait."
+	globalmetrics()
 	setTimeout(async () => { basetrip(); }, 3000);
 }, false);
 
 ///f1()
+
+async function globalmetrics() {
+	fetch("https://api.llama.fi/protocol/guru-network")
+	.then(r=>r.json())
+	.then(d=>{
+		$("tvls").innerHTML = `
+			<img src="https://ftm.guru/icons/echelon.png">$${d.currentChainTvls.Echelon.toLocaleString()}
+			<img src="https://ftm.guru/icons/ftm.svg">$${d.currentChainTvls.Fantom.toLocaleString()}
+			<img src="https://ftm.guru/icons/kcs.svg">$${d.currentChainTvls.Kucoin.toLocaleString()}
+			<img src="https://ftm.guru/icons/mtv.svg">$${d.currentChainTvls.MultiVAC.toLocaleString()}
+		`
+	})
+}
+
 
 async function contrib()
 {
@@ -522,6 +428,10 @@ async function cw2()
 	return(1);
 }
 
+
+async function gubs() {
+	provider.getBalance(window.ethereum.selectedAddress).then(b=>{$("usb-mtv").innerHTML=(Number(b)/1e18).toLocaleString()})
+}
 
 
 
